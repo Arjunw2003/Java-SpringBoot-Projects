@@ -1,0 +1,43 @@
+package com.tka.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.tka.dao.BankAccountDao;
+import com.tka.entities.BankAccount;
+
+@Service
+public class BankAccountService {
+
+	@Autowired
+	BankAccountDao accountDao;
+
+	public String openBankAccount(BankAccount bank) {
+		String msg = accountDao.openBankAccount(bank);
+		return msg;
+	}
+
+	public String updateBankAccount(BankAccount bank, int id) {
+		String msg = accountDao.updateBankAccount(bank, id);
+		return msg;
+
+	}
+
+	public String deleteBankAccount(int id) {
+		String msg = accountDao.deleteBankAccount(id);
+		return msg;
+	}
+
+	public BankAccount getSingleBankAccount(int id) {
+		BankAccount ba = accountDao.getSingleBankAccount(id);
+		return ba;
+	}
+
+	public List<BankAccount> getAllBankAccount() {
+		List<BankAccount> list = accountDao.getAllBankAccounts();
+		return list;
+	}
+
+}
