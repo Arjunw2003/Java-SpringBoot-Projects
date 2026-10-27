@@ -1,0 +1,18 @@
+package com.jbk.entities;
+
+import jakarta.persistence.Entity;
+
+@Entity
+public class BankAccount {
+	
+	private int accountId;
+	private String accountHolderName;
+	private Long accountNumber;
+	private String accountType;
+	private double balance;
+	private String bankName;
+	private String bra;
+	private String bankName;
+	private String bankName;
+
+}

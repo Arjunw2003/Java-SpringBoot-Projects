@@ -1,0 +1,113 @@
+package com.tka.dao;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.query.MutationQuery;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+import com.tka.entities.Teacher;
+
+@Repository
+public class TeacherDao {
+
+	@Autowired
+	SessionFactory factory;
+
+	public String addTeacher(Teacher te) {
+
+		Session s = factory.openSession();
+		Transaction tr = s.beginTransaction();
+
+		String hqlQuery = "insert into Teacher(teacherName, age, gender, subject, qualification,experience, salary, city, moNumber) values(:teacherName, :age, :gender, :subject, :qualification, :experience, :salary, :city, :moNumber)";
+		MutationQuery mq = s.createMutationQuery(hqlQuery);
+
+		mq.setParameter("teacherName", te.getTeacherName());
+		mq.setParameter("age", te.getAge());
+		mq.setParameter("gender", te.getGender());
+		mq.setParameter("subject", te.getSubject());
+		mq.setParameter("qualification", te.getQualification());
+		mq.setParameter("experience", te.getExperience());
+		mq.setParameter("salary", te.getSalary());
+		mq.setParameter("city", te.getCity());
+		mq.setParameter("moNumber", te.getMoNumber());
+
+		int result = mq.executeUpdate();
+
+		tr.commit();
+		s.close();
+
+		if (result > 0) {
+			return "Teacher Added Successfully...!";
+		}else {
+			return "Teacher Added Failds...!";
+		}
+	}
+
+	public String updateTeacher(Teacher te, int id) {
+		
+		Session s = factory.openSession();
+		Transaction tr = s.beginTransaction();
+		
+		String hqlQuery = "update Teacher set teacherName = :teacherName, age= :age,gender = :gender, subject = :subject, qualification = :qualification, experience = :experience, salary = :salary, city = :city, moNumber = :moNumber where teacherId = :id";
+		
+		MutationQuery mq = s.createMutationQuery(hqlQuery);
+		
+		mq.setParameter("id", id);
+		mq.setParameter("teacherName", te.getTeacherName());
+		mq.setParameter("age", te.getAge());
+		mq.setParameter("gender", te.getGender());
+		mq.setParameter("subject", te.getSubject());
+		mq.setParameter("qualification", te.getQualification());
+		mq.setParameter("experience", te.getExperience());
+		mq.setParameter("salary", te.getSalary());
+		mq.setParameter("city", te.getCity());
+		mq.setParameter("moNumber", te.getMoNumber());
+		
+		int resutl = mq.executeUpdate();
+		
+		tr.commit();
+		
+		if (resutl > 0) {
+			return "Teacher Updated Successfully";
+		}else {
+			return "Teacher Updated Failds";
+
+		}
+		
+		
+	}
+
+	public String deleteTeacher(int id) {
+		
+	  	Session s = factory.openSession();
+	  	Transaction tr = s.beginTransaction();
+	  	
+	  	String hqlQuery = "delete Teacher where teacherId = :id";
+	  	MutationQuery mq = s.createMutationQuery(hqlQuery);
+	  	
+	  	mq.setParameter("id", id);
+	  	
+	  	int result = mq.executeUpdate();
+	  	tr.commit();
+	  	s.close();
+	  	
+	  	if (result > 0) {
+	  		return "Teacher Deleted Successfully...!";
+		}else {
+			return "Teacher Deleted Faild...!";
+		}
+	}
+	
+	public void getSingleTeacher(int id) {
+		
+		Session s = factory.openSession();
+	  	Transaction tr = s.beginTransaction();
+	  	
+	  	String hqlQuery = "from Teacher where teacherId = :id";
+	  	
+	  	
+	}
+
+}

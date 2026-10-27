@@ -1,0 +1,32 @@
+package com.tka.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.tka.entities.BankAccount;
+import com.tka.service.BankAccountService;
+
+@RestController
+@RequestMapping("/bank")
+public class BankAccountController {
+	
+	@Autowired
+	BankAccountService accountService;
+	
+	@PostMapping("/openAccount")
+	public String openBankAccount(@RequestBody BankAccount bank) {
+		String msg = accountService.openBankAccount(bank);
+		return msg;
+	}
+	
+	@PutMapping("/updateAccount")
+	public String updateBankAccount(BankAccount bank, int id) {
+		String msg = accountService.updateBankAccount(bank, id);
+		return msg; 
+	}
+
+}

@@ -1,0 +1,12 @@
+package com.jbk.entities;
+
+import jakarta.persistence.Entity;
+
+@Entity
+public class Student {
+
+	private int stdid;
+	private String name;
+	private int age;
+	private string city;
+}

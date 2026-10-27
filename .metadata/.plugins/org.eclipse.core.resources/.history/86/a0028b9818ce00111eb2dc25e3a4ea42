@@ -1,0 +1,26 @@
+package com.example.demo;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.PostMapping;
+
+
+@RestController
+public class CreateApi {
+
+	@GetMapping("/register")
+	public String register() {
+
+		return "Registration Successfully";
+
+	}
+	
+	
+	@PostMapping("/register")
+	public String login() {
+		
+		return "Registration Successfully";
+		
+	}
+
+}

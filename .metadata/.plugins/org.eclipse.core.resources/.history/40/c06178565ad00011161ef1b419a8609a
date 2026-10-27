@@ -1,0 +1,21 @@
+package com.tka.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.RequestBody;
+
+import com.tka.dao.TeacherDao;
+import com.tka.entities.Teacher;
+
+@Service
+public class TeacherService {
+	
+	@Autowired
+	TeacherDao dao;
+
+	public String addTeacher(@RequestBody Teacher te) {
+		return dao.addTeacher(te);
+	}
+	
+
+}

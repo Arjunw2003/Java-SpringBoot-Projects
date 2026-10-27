@@ -1,0 +1,25 @@
+package com.tka.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.tka.dao.CustomerDao;
+import com.tka.entities.Customer;
+
+@Service
+public class CustomerService {
+	
+	@Autowired
+	CustomerDao dao;
+	
+	public String addCustomer(Customer c) {
+		
+		return dao.addCustomer(c);
+		
+	}
+
+	public String updateCustomer(Customer c, int id) {
+		return dao.updateCustomer;
+	} 
+
+}

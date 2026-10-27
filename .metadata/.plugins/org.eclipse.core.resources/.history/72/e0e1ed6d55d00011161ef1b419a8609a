@@ -1,0 +1,17 @@
+package com.tka.controller;
+
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.tka.entities.Teacher;
+
+@RestController
+@RequestMapping("/teacher")
+public class TeacherController {
+
+	@PostMapping("/addTeacher")
+	public void addTeacher(Teacher te) {
+		
+	}
+}

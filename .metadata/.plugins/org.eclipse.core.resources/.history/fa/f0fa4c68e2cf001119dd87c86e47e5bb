@@ -1,0 +1,6 @@
+package com.jbk.entities;
+
+
+public class BankAccount {
+
+}

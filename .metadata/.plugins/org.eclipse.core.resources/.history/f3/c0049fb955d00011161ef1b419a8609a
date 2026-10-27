@@ -1,0 +1,17 @@
+package com.tka.service;
+
+import org.springframework.stereotype.Service;
+
+import com.tka.dao.TeacherDao;
+import com.tka.entities.Teacher;
+
+@Service
+public class TeacherService {
+	
+	TeacherDao
+
+	public String addTeacher(Teacher te) {
+		return null;
+	}
+
+}

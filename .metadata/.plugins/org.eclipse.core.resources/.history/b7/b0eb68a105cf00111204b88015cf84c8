@@ -1,0 +1,24 @@
+package com.jbk.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.jbk.dao.StudentDao;
+import com.jbk.entities.Student;
+
+@Service
+public class StudentService {
+
+	@Autowired
+	StudentDao dao;
+
+	public String insertData(Student std) {
+		String msg = dao.inserData(std);
+		return msg;
+	}
+
+	public String deleteData(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+}

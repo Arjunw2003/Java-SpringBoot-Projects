@@ -1,0 +1,34 @@
+package com.tka.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.tka.dao.EmployeeDao;
+import com.tka.entities.Employee;
+
+@Service
+public class EmployeeService {
+
+	@Autowired
+	EmployeeDao dao;
+
+	public String insertData(Employee emp) {
+		String msg = dao.insertData(emp);
+		return msg;
+	}
+
+	public String updateData(Employee emp, int id) {
+		String msg = dao.updateData(emp, id);
+		return msg;
+	}
+
+	public String deleteData(int id) {
+		String msg = dao.deleteData(id);
+		return msg;
+	}
+	
+	public void getSingleData() {
+		dao.updateData(emp, id);
+	}
+
+}

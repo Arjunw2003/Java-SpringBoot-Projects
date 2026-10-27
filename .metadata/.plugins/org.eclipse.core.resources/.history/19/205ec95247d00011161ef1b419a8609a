@@ -1,0 +1,19 @@
+package com.tka.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.tka.dao.ProductDao;
+import com.tka.entities.Product;
+
+@Service
+public class ProductService {
+	
+	@Autowired
+	ProductDao dao;
+
+	public int insertProduct(Product prod) {
+		return dao.insertProduct(prod);
+	}
+
+}

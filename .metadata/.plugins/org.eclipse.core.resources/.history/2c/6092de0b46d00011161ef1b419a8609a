@@ -1,0 +1,26 @@
+package com.tka.dao;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+import com.tka.entities.Product;
+
+@Repository
+public class ProductDao {
+	
+	@Autowired
+	SessionFactory factory;
+
+	public String insertProduct(Product prod) {
+		
+		Session s = factory.openSession();
+		Transaction tr = s.beginTransaction();
+		
+		s.persist(prod);
+		return null;
+	}
+
+}

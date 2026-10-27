@@ -1,0 +1,12 @@
+package com.jbk.service;
+
+import org.springframework.stereotype.Service;
+
+import com.jbk.dao.BankAccountDao;
+
+@Service
+public class BankAccountService {
+	
+	BankAccountDao accountDao
+
+}

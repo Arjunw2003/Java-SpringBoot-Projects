@@ -1,0 +1,20 @@
+package com.jbk.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.jbk.dao.BankAccountDao;
+import com.jbk.entities.BankAccount;
+
+@Service
+public class BankAccountService {
+
+//	@Autowired
+//	BankAccountDao accountDao;
+//
+//	public String openBankAccount(BankAccount bank) {
+//		String msg = accountDao.openBankAccount(bank);
+//		return msg;
+//	}
+
+}

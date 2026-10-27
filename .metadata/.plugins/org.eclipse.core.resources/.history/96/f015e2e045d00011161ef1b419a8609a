@@ -1,0 +1,15 @@
+package com.tka.dao;
+
+import org.springframework.stereotype.Repository;
+
+import com.tka.entities.Product;
+
+@Repository
+public class ProductDao {
+
+	public String insertProduct(Product prod) {
+		
+		return null;
+	}
+
+}

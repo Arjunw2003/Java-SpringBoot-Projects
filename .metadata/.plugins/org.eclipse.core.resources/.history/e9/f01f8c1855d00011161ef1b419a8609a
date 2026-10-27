@@ -1,0 +1,20 @@
+package com.tka.entities;
+
+import jakarta.persistence.Entity;
+
+@Entity
+public class Teacher {
+	
+	private int teacherId;
+	private String teacherName;
+	private int age;
+	private String gender;
+	private String subject;
+	private String qualification;
+	private int experience;
+	private double salary;
+	private String city;
+	private String moNumber
+	
+
+}

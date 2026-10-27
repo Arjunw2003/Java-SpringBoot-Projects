@@ -1,0 +1,13 @@
+package com.tka.entities;
+
+import jakarta.persistence.Entity;
+
+@Entity
+public class Employee {
+
+	private int empId;
+	private String empName;
+	private int empAge;
+	private String empcity;
+	private double sallary;
+}

@@ -1,0 +1,50 @@
+package com.tka.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.tka.entities.Teacher;
+import com.tka.service.TeacherService;
+
+@RestController
+@RequestMapping("/teacher")
+public class TeacherController {
+
+	@Autowired
+	TeacherService service;
+
+	@PostMapping("/addTeacher")
+	public String addTeacher(@RequestBody Teacher te) {
+		return service.addTeacher(te);
+	}
+
+	@PutMapping("/updateTeacher/{id}")
+	public String updateTeacher(@RequestBody Teacher te, @PathVariable int id) {
+		return service.updateTeacher(te, id);
+	}
+
+	@DeleteMapping("/deleteTeacher")
+	public String deleteTeacher(@RequestParam int id) {
+		return service.deleteTeacher(id);
+	}
+
+	@GetMapping("/getSingleTeacher")
+	public Teacher getSingleTeacher(@RequestParam int id) {
+		return service.getSingleTeacher(id);
+	}
+
+	@GetMapping("/getAllTeacher")
+	public List<Teacher> getAllTeacher() {
+		return service.getAllTeacher();
+	}
+}

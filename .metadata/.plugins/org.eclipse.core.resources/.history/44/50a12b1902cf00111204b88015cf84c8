@@ -1,0 +1,25 @@
+package com.jbk.entities;
+
+import jakarta.persistence.Entity;
+
+@Entity
+public class Student {
+
+	private int stdid;
+	private String name;
+	private int age;
+	private String city;
+	public Student() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	public Student(int stdid, String name, int age, String city) {
+		super();
+		this.stdid = stdid;
+		this.name = name;
+		this.age = age;
+		this.city = city;
+	}
+	
+	
+}

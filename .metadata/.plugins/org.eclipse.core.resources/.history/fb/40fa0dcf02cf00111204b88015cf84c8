@@ -1,0 +1,5 @@
+spring.application.name=SpringBootCrudOperation
+
+spring.datasource.url=jdbc:mysql://localhost:3306/SpringBootProjectdb?createDatabaseIfNotExist=true
+spring.datasource.username=root
+spring.datasource.password=

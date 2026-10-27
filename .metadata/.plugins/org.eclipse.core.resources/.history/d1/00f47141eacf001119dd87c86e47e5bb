@@ -1,0 +1,16 @@
+package com.jbk.service;
+
+
+
+@Service
+public class BankAccountService {
+
+//	@Autowired
+//	BankAccountDao accountDao;
+//
+//	public String openBankAccount(BankAccount bank) {
+//		String msg = accountDao.openBankAccount(bank);
+//		return msg;
+//	}
+
+}

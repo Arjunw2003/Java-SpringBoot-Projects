@@ -1,0 +1,70 @@
+package com.tka.dao;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+import com.tka.entities.BankAccount;
+
+@Repository
+public class BankAccountDao {
+
+	@Autowired
+	SessionFactory factory;
+
+	public String openBankAccount(BankAccount bank) {
+
+		Session s = factory.openSession();
+		Transaction tr = s.beginTransaction();
+
+		s.persist(bank);
+
+		tr.commit();
+		s.close();
+
+		return "Account Open Successfully...!";
+
+	}
+
+	public String updateBankAccount(BankAccount bank, int id) {
+
+		Session s = factory.openSession();
+		Transaction tr = s.beginTransaction();
+
+		BankAccount ba = s.find(BankAccount.class, id);
+		ba.setAccountHolderName(bank.getAccountHolderName());
+		ba.setAccountNumber(bank.getAccountNumber());
+		ba.setAccountType(bank.getAccountType());
+		ba.setBalance(bank.getBalance());
+		ba.setBankName(bank.getBankName());
+		ba.setBranchName(bank.getBranchName());
+		ba.setIfscCode(bank.getIfscCode());
+		ba.setMobileNumber(bank.getMobileNumber());
+
+		s.merge(ba);
+
+		tr.commit();
+		s.close();
+
+		return "Bank Account Updated Successfully....!";
+
+	}
+
+	public String deleteBankAccount(int id) {
+
+		Session s = factory.openSession();
+		Transaction tr = s.beginTransaction();
+
+		BankAccount ba = s.find(BankAccount.class, id);
+		s.remove(ba);
+
+		tr.commit();
+		s.close();
+
+		return "Bank Account Deleted Successfully....!";
+
+	}
+
+}

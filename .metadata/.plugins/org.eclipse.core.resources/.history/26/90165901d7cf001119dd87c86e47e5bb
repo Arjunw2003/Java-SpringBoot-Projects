@@ -1,0 +1,38 @@
+package com.tka.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.tka.entities.Employee;
+import com.tka.service.EmployeeService;
+
+@RestController
+@RequestMapping("/employee")
+public class EmployeeController {
+
+	@Autowired
+	EmployeeService service;
+	
+	@PostMapping("/insert")
+	public String insertData(@RequestBody Employee emp) {
+		String msg = service.insertData(emp);
+		return msg;
+	}
+	
+	@PutMapping("/update/{id}")
+	public String updateData(@RequestBody Employee emp, @PathVariable int id) {
+		String msg = service.updateData(emp, id);
+		return msg;
+	}
+	
+	@DeleteMapping("/delete/{id}")
+	public void deleteData(int id) {
+		service
+	}
+}

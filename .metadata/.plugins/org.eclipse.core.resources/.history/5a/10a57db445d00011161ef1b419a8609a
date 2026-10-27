@@ -1,0 +1,15 @@
+package com.tka.service;
+
+import org.springframework.stereotype.Service;
+
+import com.tka.entities.Product;
+
+@Service
+public class ProductService {
+
+	public String insertProduct(Product prod) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

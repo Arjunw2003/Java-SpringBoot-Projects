@@ -1,0 +1,20 @@
+package com.tka.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.tka.entities.Employee;
+import com.tka.service.EmployeeService;
+
+@RestController
+public class EmployeeController {
+
+	@Autowired
+	EmployeeService service;
+	
+	@
+	public String insertData(Employee emp) {
+		String msg = service.insertData(emp);
+		return msg;
+	}
+}

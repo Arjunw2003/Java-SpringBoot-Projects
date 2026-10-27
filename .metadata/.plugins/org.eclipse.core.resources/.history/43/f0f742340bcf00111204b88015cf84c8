@@ -1,0 +1,72 @@
+package com.jbk.dao;
+
+import java.util.List;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+import com.jbk.entities.Student;
+
+import jakarta.persistence.Query;
+
+@Repository
+public class StudentDao {
+
+	@Autowired
+	SessionFactory factory;
+
+	public String inserData(Student std) {
+
+		Session session = factory.openSession();
+		Transaction tr = session.beginTransaction();
+
+		session.persist(std);
+
+		tr.commit();
+		session.close();
+
+		return "Data Inserted...";
+
+	}
+
+	public String deleteData(int id) {
+		Session session = factory.openSession();
+		Transaction tr = session.beginTransaction();
+
+		Student s = session.find(Student.class, id);
+		session.remove(s);
+
+		tr.commit();
+		session.close();
+
+		return "Data Deleted...";
+
+	}
+
+	public Student getSingleData(int id) {
+		Session session = factory.openSession();
+		Transaction tr = session.beginTransaction();
+
+		Student s = session.find(Student.class, id);
+		return s;
+
+	}
+	
+	public void getAllData() {
+		Session session = factory.openSession();
+		Transaction tr = session.beginTransaction();
+		
+		String hqlQuery = "from Student";
+		
+		Query query = session.createQuery(hqlQuery);
+		List<Student> list = query.getResultList();
+		
+		tr.commit();
+		session.close();
+		
+		return list
+	}
+}

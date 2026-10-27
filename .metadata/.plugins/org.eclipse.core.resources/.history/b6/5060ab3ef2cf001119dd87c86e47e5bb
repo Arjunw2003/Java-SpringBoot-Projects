@@ -1,0 +1,94 @@
+package com.tka.dao;
+
+import java.util.List;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.query.Query;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+import com.tka.entities.Employee;
+
+@Repository
+public class EmployeeDao {
+
+	@Autowired
+	SessionFactory factory;
+
+	public String insertData(Employee emp) {
+
+		Session s = factory.openSession();
+		Transaction tr = s.beginTransaction();
+
+		s.persist(emp);
+
+		tr.commit();
+		s.close();
+
+		return "Data Inserted...";
+	}
+
+	public String updateData(Employee emp, int id) {
+
+		Session s = factory.openSession();
+		Transaction tr = s.beginTransaction();
+
+		Employee e = s.find(Employee.class, id);
+		e.setEmpName(emp.getEmpName());
+		e.setEmpAge(emp.getEmpAge());
+		e.setEmpcity(emp.getEmpcity());
+		e.setSallary(emp.getSallary());
+
+		s.merge(e);
+
+		tr.commit();
+		s.close();
+
+		return "Data Updatedd.....!";
+	}
+
+	public String deleteData(int id) {
+
+		Session s = factory.openSession();
+		Transaction tr = s.beginTransaction();
+
+		Employee e = s.find(Employee.class, id);
+		s.remove(e);
+
+		tr.commit();
+		s.close();
+
+		return "Data Deleted...!";
+	}
+
+	public Employee getSingleData(int id) {
+		Session s = factory.openSession();
+		Transaction tr = s.beginTransaction();
+
+		Employee e = s.find(Employee.class, id);
+
+		tr.commit();
+		s.close();
+
+		return e;
+
+	}
+
+	public List<Employee> getAllData() {
+		Session s = factory.openSession();
+		Transaction tr = s.beginTransaction();
+
+		String hqlQuery = "from Employee";
+
+		Query query = s.createQuery(hqlQuery, Employee.class);
+		List<Employee> list = query.getResultList();
+
+		tr.commit();
+		s.close();
+
+		return list;
+	}
+
+}
