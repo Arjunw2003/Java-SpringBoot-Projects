@@ -6,6 +6,7 @@
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="D:\Full Statck Java\SpringBootProject\SAMSTRACK_API"/>
 			<item value="D:\Full Statck Java\SpringBootProject\SpringBootCrudOperation"/>
 		</list>
 		<list key="projectNameTemplate">
