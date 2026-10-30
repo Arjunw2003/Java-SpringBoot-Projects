@@ -1,143 +1,30 @@
-0:33:43 Tab9 StartNav110 #typed
-0:33:44 Tab9 FinishNav109
-0:33:44 Tab9 PageLoad
-0:33:44 Tab9 FinishNav110
-0:33:44 Tab9 PageLoad
-0:33:44 Tab9 StartNav111 #typed
-0:33:44 Tab9 FinishNav111
-0:33:44 Tab9 PageLoad
-0:33:46 Tab9 StartNav112 #typed
-0:33:46 Tab9 FinishNav112
-0:33:46 Tab9 PageLoad
-0:33:48 Tab9 StartNav113 #typed
-0:33:48 Tab9 FinishNav113
-0:33:48 Tab9 PageLoad
-0:33:50 Tab9 StartNav114 #typed
-0:33:50 Tab9 FinishNav114
-0:33:50 Tab9 PageLoad
-0:33:51 Tab9 StartNav115 #typed
-0:33:51 Tab9 FinishNav115
-0:33:51 Tab9 PageLoad
-0:33:52 Tab9 StartNav116 #typed
-0:33:52 Tab9 FinishNav116
-0:33:52 Tab9 PageLoad
-0:33:53 Tab9 StartNav117 #typed
-0:33:53 Tab9 FinishNav117
-0:33:53 Tab9 PageLoad
-0:33:53 Memory Pressure: Moderate
-0:33:54 Tab9 StartNav118 #typed
-0:33:54 Tab9 FinishNav118
-0:33:54 Tab9 PageLoad
-0:33:54 Tab9 StartNav119 #typed
-0:33:54 Tab9 FinishNav119
-0:33:54 Tab9 PageLoad
-0:33:55 Tab9 StartNav120 #typed
-0:33:55 Tab9 FinishNav120
-0:33:55 Tab9 PageLoad
-0:34:03 Memory Pressure: Moderate
-0:34:06 Tab9 StartNav121 #typed
-0:34:06 Tab9 FinishNav121
-0:34:06 Tab9 PageLoad
-0:34:07 Tab9 StartNav122 #typed
-0:34:07 Tab9 FinishNav122
-0:34:07 Tab9 PageLoad
-0:34:08 Tab9 StartNav123 #typed
-0:34:08 Tab9 FinishNav123
-0:34:08 Tab9 PageLoad
-0:34:13 Memory Pressure: Moderate
-0:34:14 Microsoft.BrowserList.AddBrowser
-0:34:14 Browser10 Insert active Tab10 at 0
-0:34:14 Tab10 StartNav124 #auto_toplevel
-0:34:14 Tab10 StartNav125 #typed
-0:34:14 Tab10 StartNav126 #typed
-0:34:14 Tab10 FinishNav124
-0:34:14 Tab10 PageLoad
-0:34:14 Tab10 FinishNav125
-0:34:14 Tab10 PageLoad
-0:34:14 Tab10 FinishNav126
-0:34:14 Tab10 PageLoad
-0:34:15 Tab10 StartNav127 #typed
-0:34:15 Tab10 FinishNav127
-0:34:15 Tab10 PageLoad
-0:34:18 Tab10 StartNav128 #typed
-0:34:18 Tab10 FinishNav128
-0:34:18 Tab10 PageLoad
-0:34:23 Memory Pressure: Moderate
-0:34:24 Tab10 StartNav129 #typed
-0:34:24 Tab10 FinishNav129
-0:34:24 Tab10 PageLoad
-0:34:33 Memory Pressure: Moderate
-0:34:36 Microsoft.BrowserList.AddBrowser
-0:34:36 Browser11 Insert active Tab11 at 0
-0:34:36 Tab11 StartNav130 #auto_toplevel
-0:34:36 Tab11 StartNav131 #typed
-0:34:36 Tab11 FinishNav130
-0:34:36 Tab11 PageLoad
-0:34:36 Tab11 FinishNav131
-0:34:36 Tab11 PageLoad
-0:34:37 Tab11 StartNav132 #typed
-0:34:37 Tab11 FinishNav132
-0:34:37 Tab11 PageLoad
-0:34:43 Memory Pressure: Moderate
-0:34:47 Tab5 StartNav133 #typed
-0:34:47 Tab5 FinishNav133
-0:34:47 Tab5 PageLoad
-0:34:53 Memory Pressure: Moderate
-0:35:03 Memory Pressure: Moderate
-0:35:13 Memory Pressure: Moderate
-0:35:23 Memory Pressure: Moderate
-0:35:33 Memory Pressure: Moderate
-0:35:43 Memory Pressure: Moderate
-0:35:52 Tab11 StartNav134 #typed
-0:35:52 Tab11 FinishNav134
-0:35:52 Tab11 PageLoad
-0:35:53 Memory Pressure: Moderate
-0:35:56 Tab11 StartNav135 #typed
-0:35:56 Tab11 FinishNav135
-0:35:56 Tab11 PageLoad
-0:36:03 Memory Pressure: Moderate
-0:36:13 Memory Pressure: Moderate
-0:36:23 Memory Pressure: Moderate
-0:36:33 Memory Pressure: Moderate
-0:36:43 Memory Pressure: Moderate
-0:36:48 Memory Pressure: None
-0:37:03 Memory Pressure: Moderate
-0:37:13 Memory Pressure: Moderate
-0:37:23 Memory Pressure: Moderate
-0:37:33 Memory Pressure: Moderate
-0:37:43 Memory Pressure: Moderate
-0:37:53 Memory Pressure: Moderate
-0:38:03 Memory Pressure: Moderate
-0:38:08 Memory Pressure: None
-0:38:13 Memory Pressure: Moderate
-0:38:17 Tab11 StartNav136 #typed
-0:38:17 Tab11 FinishNav136
-0:38:18 Tab11 PageLoad
-0:38:19 Tab11 StartNav137 #typed
-0:38:19 Tab11 FinishNav137
-0:38:19 Tab11 PageLoad
-0:38:23 Memory Pressure: Moderate
-0:38:33 Memory Pressure: Moderate
-0:38:43 Memory Pressure: Moderate
-0:38:53 Memory Pressure: Moderate
-0:39:03 Memory Pressure: Critical
-0:39:08 Memory Pressure: Critical
-0:39:13 Memory Pressure: Moderate
-0:39:23 Memory Pressure: Moderate
-0:39:33 Memory Pressure: Moderate
-0:39:43 Memory Pressure: Moderate
-0:39:53 Memory Pressure: Moderate
-0:40:04 Memory Pressure: Moderate
-0:40:14 Memory Pressure: Moderate
-0:40:24 Memory Pressure: Moderate
-0:40:34 Memory Pressure: Critical
-0:40:39 Memory Pressure: Moderate
-0:40:44 Memory Pressure: Critical
-0:40:49 Memory Pressure: Critical
-0:40:54 Memory Pressure: Critical
-0:40:59 Memory Pressure: Moderate
-0:41:09 Memory Pressure: Moderate
-0:41:19 Memory Pressure: Moderate
-0:41:24 Memory Pressure: None
-0:41:29 Memory Pressure: Moderate
-0:41:39 Memory Pressure: Moderate
+1:44:07 Microsoft.Shutdown.TabStripModel.CloseAllTabs
+1:44:07 Microsoft.Shutdown.TabStripModel.CloseTabs
+1:44:07 Microsoft.Shutdown.TabStripModel.CloseTabs_EdgeBeforeClosingAllTabs
+1:44:07 Microsoft.Shutdown.TabStripModel.InternalCloseTabsImpl
+1:44:07 Microsoft.Shutdown.TabStripModel.InternalCloseTabsImpl_TabClosable
+1:44:07 Microsoft.Shutdown.TabStripModel.InternalCloseTabsImpl_ClosingAll
+1:44:07 Microsoft.Shutdown.TabStripModel.CloseWebContentses
+1:44:07 Microsoft.Shutdown.TabStripModel.CloseWebContentses_FastShutdown
+1:44:07 Tab57 RenderProcessGone
+1:44:07 Microsoft.UnloadController.ClearUnloadState
+1:44:07 Microsoft.Shutdown.TabStripModel.RunUnloadListenerBeforeClosing_false
+1:44:07 Microsoft.Shutdown.TabStripModel.InternalCloseTabsImpl_ClosedAll
+1:44:07 Microsoft.Shutdown.TabStripModel.SendDetachWebContentsNotifications
+1:44:07 Microsoft.UnloadController.ClearUnloadState
+1:44:07 Browser57 Close Tab57 at 0
+1:44:07 Tab57 WebContentsDestroyed
+1:44:07 Microsoft.Shutdown.OnWindowClosing
+1:44:07 Microsoft.UnloadController.IsUnclosableApp_IsNotWebApp
+1:44:07 Microsoft.UnloadController.HasCompletedUnloadProcessing_True
+1:44:07 Microsoft.Shutdown.OnWindowClosing_MaybeClearBrowsingDataOnExit
+1:44:07 Microsoft.Shutdown.OnWindowClosing_ClearBrowsingDataOnExitNotInProgress
+1:44:07 Microsoft.Shutdown.OnWindowClosingPostClearBrowsingData_NoBrowsingDataCleared
+1:44:07 Widget Closed: WebView2MinimalFrame
+1:44:07 Microsoft.UnloadController.TabStripEmpty
+1:44:07 Widget Closed: WebView2MinimalFrame
+1:44:07 Microsoft.UnloadController.HasCompletedUnloadProcessing_True
+1:44:07 Microsoft.Shutdown.OnWindowClosing
+1:44:07 Microsoft.Shutdown.OnWindowClosing_DeleteScheduled
+1:44:07 Microsoft.Browser_Removed
+1:44:07 Widget Closed: WebView2MinimalFrame
